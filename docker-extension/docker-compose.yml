@@ -2,14 +2,14 @@
 #此脚本于2017年8月9日再次更新
 
 mysql:
-  image: registry.cn-hangzhou.aliyuncs.com/13/myblog:mysql
+  image: registry.cn-beijing.aliyuncs.com/mytest-1/myblog:mysql
 
  #测试时使用
   ports:
    - 13306:3306
 
 my-blog:
-  image: registry.cn-hangzhou.aliyuncs.com/13/myblog:blog
+  image: registry.cn-beijing.aliyuncs.com/mytest-1/myblog:blog
   ports:
    - 28080:8080
   links:
